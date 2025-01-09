@@ -121,6 +121,10 @@ STATICFILES_DIRS = [
     BASE_DIR / 'base_static',  # Ajuste este caminho conforme necessário
 ]
 
+STATIC_ROOT = BASE_DIR / 'static' # collecstatic
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
