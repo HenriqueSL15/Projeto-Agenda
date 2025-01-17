@@ -3,7 +3,7 @@ from contact.models import Contact
 
 # Create your views here.
 def index(request):
-    contact = Contact.objects.all()
+    contact = Contact.objects.filter(show=True).order_by('-id')
 
     context = {
         'contacts': contact,
