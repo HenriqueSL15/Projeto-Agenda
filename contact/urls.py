@@ -15,7 +15,8 @@ urlpatterns = [
     path('contact/<int:contact_id>/delete/', views.delete, name="delete"),
 
     # # users (CRU)
-    # path('/users/<int:contact_id>/detail/', views.contact, name="contact"),
+    path('user/login/', views.login_view, name="login"),
+    path('user/logout/', views.logout_view, name="logout"),
     path('user/create/', views.register, name="register"),
     # path('/users/<int:contact_id>/update/', views.contact, name="contact"),
     # path('/users/<int:contact_id>/delete/', views.contact, name="contact"),
